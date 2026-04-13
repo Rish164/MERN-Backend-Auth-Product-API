@@ -32,34 +32,27 @@ A secure backend system built using Node.js, Express, and MongoDB that demonstra
 
 ```
 project/
-│── models/        # Database schemas
-│── routes/        # API routes
-│── middleware/    # Authentication middleware
-│── uploads/       # Uploaded images
-│── server.js      # Entry point
-│── .env           # Environment variables
+│── models/
+│── routes/
+│── middleware/
+│── uploads/
+│── server.js
+│── .env
 ```
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Setup Instructions
 
-### 1. Clone the repository
-
-```
-git clone https://github.com/your-username/mern-backend-auth-product-api.git
-cd mern-backend-auth-product-api
-```
-
-### 2. Install dependencies
+### Install dependencies
 
 ```
 npm install
 ```
 
-### 3. Setup environment variables
+### Setup environment variables
 
-Create a `.env` file in root:
+Create a `.env` file:
 
 ```
 PORT=5000
@@ -67,13 +60,13 @@ MONGO_URI=mongodb://127.0.0.1:27017/mern_practical
 JWT_SECRET=mysecretkey
 ```
 
-### 4. Run the server
+### Run the server
 
 ```
 node server.js
 ```
 
-Server will start at:
+Open:
 
 ```
 http://localhost:5000
@@ -85,62 +78,29 @@ http://localhost:5000
 
 ### 🔐 Auth Routes
 
-#### Register
+**Register**
 
 ```
 POST /api/auth/register
 ```
 
-Body:
-
-```
-{
-  "email": "test@gmail.com",
-  "password": "123456"
-}
-```
-
----
-
-#### Login
+**Login**
 
 ```
 POST /api/auth/login
-```
-
-Response:
-
-```
-{
-  "token": "your_jwt_token"
-}
 ```
 
 ---
 
 ### 🛍 Product Routes
 
-#### Add Product (Protected)
+**Add Product (Protected)**
 
 ```
 POST /api/products
 ```
 
-Headers:
-
-```
-Authorization: your_token
-```
-
-Body (form-data):
-
-* name
-* price
-* image (file)
-
----
-
-#### Get Products
+**Get Products**
 
 ```
 GET /api/products
@@ -154,41 +114,77 @@ GET /api/products
 POST /api/payment
 ```
 
-Body:
+---
 
-```
-{
-  "amount": 500
-}
-```
+## 🧪 Testing Flow
+
+1. Register
+2. Login → copy token
+3. Add product (with token)
+4. Get products
+5. Test payment
 
 ---
 
-## 🧪 Testing (Postman Flow)
-
-1. Register a user
-2. Login and copy JWT token
-3. Add product (use token in header)
-4. Fetch products
-5. Test payment API
-
----
-
-## 🧠 Key Concepts Demonstrated
+## 🧠 Key Concepts
 
 * REST API Design
-* Authentication vs Authorization
-* Middleware in Express
-* File Handling in Node.js
-* Database Integration using Mongoose
+* Authentication & Authorization
+* Middleware
+* File Upload Handling
+* Database Integration
 
 ---
 
-## 📌 Notes
+# 📘 Development Progress (Learning Log)
 
-* Ensure MongoDB is running locally before starting the server
-* Use Postman for testing APIs
-* Uploaded images are stored in the `/uploads` folder
+---
+
+## 📦 Phase 1: Project Setup
+
+### Completed:
+
+* Initialized Node.js project
+* Installed dependencies
+* Configured `.gitignore`
+
+### Learned:
+
+* Role of `package.json`
+* Dependency management
+* Importance of ignoring sensitive/large files
+
+---
+
+## 🚀 Phase 2.1: Basic Server
+
+### Completed:
+
+* Created Express server
+* Added middleware
+* Implemented root route
+
+### Learned:
+
+* Server lifecycle
+* Routing basics
+* Middleware concept
+
+---
+
+## 🗄 Phase 2.2: Database Connection
+
+### Completed:
+
+* Installed MongoDB
+* Configured service
+* Connected using Mongoose
+
+### Learned:
+
+* Client–database connection flow
+* Connection string structure
+* Async operations in backend
 
 ---
 
