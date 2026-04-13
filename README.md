@@ -188,6 +188,19 @@ POST /api/payment
 
 ---
 
+## 👤 Phase 2.3: User Model
+
+### Completed:
+- Created User schema
+- Defined email and password fields
+
+### Learned:
+- Schema defines structure of data
+- Model is used to interact with database
+- MongoDB stores data as documents
+
+---
+
 ## 📜 License
 
 This project is for educational purposes.
