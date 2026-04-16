@@ -25,6 +25,16 @@ app.get("/", (req, res) => {
     res.send("API Running");
 });
 
+app.post("/api/payment", (req, res) => {
+  const { amount } = req.body;
+
+  if (amount > 0) {
+    res.json({ status: "success" });
+  } else {
+    res.status(400).json({ status: "failed" });
+  }
+});
+
 //Start server
 app.listen(5000, () => {
     console.log("Server started on port 5000");
