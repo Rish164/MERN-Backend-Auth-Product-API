@@ -215,6 +215,20 @@ POST /api/payment
 
 ---
 
+## 🔑 Phase 2.5: Login API (JWT)
+
+### Completed:
+- Implemented login route
+- Verified user credentials
+- Generated JWT token
+
+### Learned:
+- Authentication verifies user identity
+- JWT is used as a secure identity token
+- Password comparison uses bcrypt
+
+---
+
 ## 📜 License
 
 This project is for educational purposes.
