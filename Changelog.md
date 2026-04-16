@@ -1,5 +1,10 @@
 # Changelog
 
+## Phase 2.5 - Login API
+- Implemented login route
+- Added JWT token generation
+- Verified user credentials using bcrypt
+
 ## Phase 2.4 - Register API
 - Implemented user registration route
 - Added password hashing using bcrypt
