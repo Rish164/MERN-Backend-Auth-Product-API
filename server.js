@@ -11,6 +11,9 @@ mongoose.connect("mongodb://127.0.0.1:27017/mern_practical")
 //Middleware to parse JSON
 app.use(express.json());
 
+//Connecting auth routes
+app.use("/api/auth", require("./routes/authRoutes"));
+
 //Basic route
 app.get("/", (req, res) => {
     res.send("API Running");
