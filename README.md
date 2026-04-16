@@ -229,6 +229,18 @@ POST /api/payment
 
 ---
 
+## 🛡 Phase 2.6: Middleware (Auth)
+
+### Completed:
+- Created JWT authentication middleware
+- Verified token from request headers
+
+### Learned:
+- Middleware controls request flow
+- Token verification protects routes
+
+---
+
 ## 📜 License
 
 This project is for educational purposes.

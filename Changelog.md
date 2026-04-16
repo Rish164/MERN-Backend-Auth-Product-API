@@ -1,5 +1,9 @@
 # Changelog
 
+## Phase 2.6 - Middleware
+- Added JWT authentication middleware
+- Implemented token verification
+
 ## Phase 2.5 - Login API
 - Implemented login route
 - Added JWT token generation
