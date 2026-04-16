@@ -1,5 +1,11 @@
 # Changelog
 
+## Phase 2.7-2.8 - Product API & Image Upload
+- Created Product schema and routes
+- Implemented protected product creation
+- Added image upload using Multer
+- Stored image paths in database
+
 ## Phase 2.6 - Middleware
 - Added JWT authentication middleware
 - Implemented token verification

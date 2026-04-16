@@ -17,6 +17,9 @@ app.use("/api/auth", require("./routes/authRoutes"));
 //Connecting product routes
 app.use("/api/products", require("./routes/productRoutes"));
 
+// Serve uploaded images
+app.use("/uploads", express.static("uploads"));
+
 //Basic route
 app.get("/", (req, res) => {
     res.send("API Running");

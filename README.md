@@ -241,6 +241,21 @@ POST /api/payment
 
 ---
 
+## 🛍 Phase 2.7-2.8: Product API & Image Upload
+
+### Completed:
+- Created Product model
+- Implemented add and get product APIs
+- Protected product creation using JWT middleware
+- Integrated Multer for image upload
+- Stored uploaded image paths in database
+
+### Learned:
+- How middleware protects routes using tokens
+- How file uploads are handled in backend
+- Difference between JSON and form-data requests
+- How backend stores file references
+
 ## 📜 License
 
 This project is for educational purposes.
