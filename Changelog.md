@@ -1,5 +1,9 @@
 # Changelog
 
+## Phase 2.9 - Payment API
+- Implemented mock payment endpoint
+- Added success and failure response handling
+
 ## Phase 2.7-2.8 - Product API & Image Upload
 - Created Product schema and routes
 - Implemented protected product creation

@@ -256,6 +256,35 @@ POST /api/payment
 - Difference between JSON and form-data requests
 - How backend stores file references
 
+---
+
+## 💳 Phase 2.9: Payment API (Mock)
+
+### Completed:
+- Implemented mock payment endpoint
+- Handled success and failure cases based on amount
+
+### Learned:
+- How APIs simulate real-world services
+- Request validation basics
+- Response status handling
+
+---
+
+## ✅ Final Outcome
+
+A complete backend system was developed with:
+
+- User authentication using JWT
+- Secure password storage with bcrypt
+- Protected routes using middleware
+- Product management APIs
+- Image upload functionality using Multer
+- Mock payment integration
+- API testing using Postman
+
+This project demonstrates core backend development concepts in a structured and practical manner.
+
 ## 📜 License
 
 This project is for educational purposes.
