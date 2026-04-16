@@ -1,5 +1,10 @@
 # Changelog
 
+## Phase 2.4 - Register API
+- Implemented user registration route
+- Added password hashing using bcrypt
+- Stored user data in MongoDB
+
 ## Phase 2.3 - User Model
 - Created User schema using Mongoose
 - Defined email and password fields
