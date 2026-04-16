@@ -14,6 +14,9 @@ app.use(express.json());
 //Connecting auth routes
 app.use("/api/auth", require("./routes/authRoutes"));
 
+//Connecting product routes
+app.use("/api/products", require("./routes/productRoutes"));
+
 //Basic route
 app.get("/", (req, res) => {
     res.send("API Running");
