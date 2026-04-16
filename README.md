@@ -201,6 +201,20 @@ POST /api/payment
 
 ---
 
+## 🔐 Phase 2.4: Register API
+
+### Completed:
+- Implemented user registration route
+- Added password hashing using bcrypt
+- Stored user data in MongoDB
+
+### Learned:
+- How POST requests send data to server
+- Passwords must be hashed before storing
+- Data flows from client → server → database
+
+---
+
 ## 📜 License
 
 This project is for educational purposes.
